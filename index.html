@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>L1 Games</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: darkblue;
+            width: 98%;
+        }
+        h1 {
+            text-align: center;
+            color: darkred;
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 10px;
+            margin: -2px;
+        }
+        a {
+            background-color: darkorange;
+            padding: 20px;
+            padding-bottom: 22px;
+            margin: 10px;
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+            gap: 5px;
+        }
+        a:hover {
+            transform: scale(1.1)
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 75px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to L1 Games</h1>
+    <a href="https://dosgamesl126.github.io">DOS GAMES (en construccion)</a> <!-- en construccion -->
+	<a href="./flashgames.html">Flash Games</a>
+    <a href="./atari2600.html">Atari 2600</a>
+    <a href="https://dustinbrett.com/">Daedal</a> 
+    <a href="https://mcl12026proyecy.github.io">Minecraft (1.8)</a> 
+    <a href="https://ruffle.rs/demo/">Flash Demo</a>
+    <a href="https://lapoderosaliga124.github.io">Javascript Games (en construccion)</a> <!-- en construccion -->
+    <a href="https://dos.zone/">Dos Zone</a> 
+    <a href="./admin.html">Admin</a>
+    <a href="https://duckduckgo.com/">DuckDuckGo</a> 
+    <a href="https://www.google.com/search?q=google+games">Google Games</a> 
+    <a href="https://j2me.online/">Jar Online (en mantenimiento)</a> 
+    <a href="https://javatari.org/">Atari Emulator</a>
+	<a href="https://www.winfy.net/">Winfy</a>
+    <button onclick="window.close(); openGame()" style="background-color: #0d3370; color: #fff; border: 1px; border-color: #0d3370; font-size: 26px; width:100%; cursor: pointer; border-radius: 10px;">Abrir en blanco</button><!-- hecho -->
+    <script>
+        function openGame() {
+            var win = window.open()
+            var url = "./index.html"
+            var iframe = win.document.createElement('iframe')
+            iframe.style.width = "100%"
+            iframe.style.height = "100%"
+            iframe.style.border = "none"
+            iframe.src = url
+            win.document.body.appendChild(iframe)
+        }
+    </script>
+
+    <footer>
+        <div>About:</div>
+        <div>L1 Games 2026</div>
+    </footer>
+</body>
+</html>
